@@ -1,0 +1,41 @@
+" Basics
+set number
+
+set lazyredraw " Don't try to continuously update the screen during macros (makes things go faster)
+highlight ColorColumn ctermbg=darkgray
+" set textwidth=80
+set colorcolumn=+1
+let &colorcolumn="80,".join(range(120,999),",")
+set smartindent
+set pastetoggle=<F3>
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+"" Whitespace
+set nowrap                      " don't wrap lines
+set tabstop=2 shiftwidth=2      " a tab is two spaces
+set expandtab                   " use spaces, not tabs
+
+" Filetype settings
+filetype plugin indent on
+
+" Status bar
+set laststatus=2
+set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+set showcmd
+
+" file open tab completion
+set wildmode=longest,list,full
+set wildmenu
+
+" solarized boilerplate
+syntax enable
+let g:solarized_termtrans = 1
+set background=dark
+let g:solarized_termcolors=16
+colorscheme solarized
+
+" strip whitespace
+autocmd BufEnter * EnableStripWhitespaceOnSave
