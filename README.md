@@ -1,4 +1,4 @@
-Minimalist Dotfiles
+Minimalist Dotfiles - requires vim 8
 =======
 ```
 git clone https://github.com/ZachBeta/dotfiles
