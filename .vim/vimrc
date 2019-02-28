@@ -20,6 +20,8 @@ set foldlevelstart=20
 set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces
 set expandtab                   " use spaces, not tabs
+set autoindent
+"set cindent
 
 " Filetype settings
 filetype plugin indent on
